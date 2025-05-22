@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earthquake Alert App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Earthquake Warning System</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="statusLabel">
+      <h2 id="statusLabel">Alert Status</h2>
+      <p id="alertStatus" class="status safe">No current alerts</p>
+    </section>
+
+    <section aria-labelledby="locationLabel">
+      <h2 id="locationLabel">Your Location</h2>
+      <p id="location">Fetching location...</p>
+    </section>
+
+    <button id="simulateBtn">Simulate Earthquake Alert</button>
+    <audio id="alertSound" src="alert.mp3" preload="auto"></audio>
+  
+<button id="safeBtn" disabled>Mark Myself Safe</button>
+<p id="safeStatus" class="status safe" hidden></p>
+
+</main>
+
+  <footer>
+    <p>Designed with accessibility and safety in mind.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
